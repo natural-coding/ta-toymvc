@@ -1,12 +1,38 @@
 ## SCREENS
 
-An application has for screens to interact with a user. Think of them as 
-routes that follows to controllers. The screens are:
+An application has four screens to interact with a user. Think of them as 
+routes that follows to controllers. Each screen interacts with a user in the 
+following directions:
+
+- design (visual communication);
+- showing data (controls to represent, pagination, filtering)
+- entering data (web forms)
+
+**The screens for desktops are:**
+
+1. Problem list.
+   - Showing data
+      - Table
+      - Quick filter (Show all/solved/unsolved problems)
+      - Sorting by click on a table column
+      - Restore the default sort order (by id desc) by clicking on the 
+      anchor "Default sort"
+   - Entering data
+      - [Add a problem form] in the bottom of the page
+   - Design
+      - Hide/show unfrequently used blocks of controls ([Default sort], 
+      [Add a problem form]) using JavaScipt
+2. Add a problem form.
+3. Mofidy a problem form.
+4. Authorization form.
+
+**The screens for tablets and mobile devices:**
 
 1. Problem list.
 2. Add a problem form.
 3. Mofidy a problem form.
 4. Authorization form.
+
 
 ## ROLES
 
