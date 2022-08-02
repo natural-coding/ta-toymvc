@@ -6,3 +6,17 @@ html
       <meta charset="utf-8"/>
    body
       h1 Добавление задачи
+      form(method="POST" action="#")
+         label(for="username") Имя пользователя
+         <br>
+         input(type="text" name="username" required)
+         <br>
+         <br>
+         label(for="problem_text") Введите текст
+         <br>
+         textarea(name="problem_text" required)
+         <br>
+         <br>
+         input(type="submit" value="Опубликовать") 
+
+

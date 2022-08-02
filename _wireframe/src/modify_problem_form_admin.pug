@@ -5,5 +5,24 @@ html
       <meta name="viewport" content="width=device-width"/>
       <meta charset="utf-8"/>
    body
-      h1 Изменение записи
+      h1 Редактирование записи
+      form(method="POST" action="#")
+         label(for="problem_id") ID
+         <br>
+         input(type="text" name="problem_id" readonly disabled value="3")
+         <br>
+         <br>
+         label(for="problem_status") Статус
+         <br>
+         select(name="problem_status")
+            option(value="1") Решено
+            option(value="0") Не решено
+         <br>
+         <br>
+         label(for="problem_text") Текст
+         <br>
+         textarea(name="problem_text" required)
+         <br>
+         <br>
+         input(type="submit" value="Опубликовать изменения") 
 
